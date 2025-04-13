@@ -1,0 +1,10 @@
+{
+    "require": {
+        "longman/telegram-bot": "^3.4"
+    },
+    "config": {
+        "platform-check": false,
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
