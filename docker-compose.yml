@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    environment:
+      - BOT_TOKEN=your_bot_token_here
+      - RENDER_EXTERNAL_URL=http://localhost:8080
+    volumes:
+      - .:/var/www/html
+      - ./error.log:/var/www/html/error.log
+      - ./users.json:/var/www/html/users.json
